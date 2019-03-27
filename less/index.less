@@ -173,7 +173,7 @@ header {
 	}
 
 	p {
-		font-size: 2rem;
+		font-size: 1.4rem;
 		color: @dark-gray;
 	}
 } //end of .overview
@@ -232,12 +232,13 @@ header {
 	margin: 10px 30px;
 
 	.box1 {
-		margin: 10px 30px;
+		margin: 10px 15px;
 		width: 33%;
 		line-height: 2rem;
 		font-family: helvetica, arial;
 		background: #f8f8f8;
 		display: block;
+		text-align: left;
 	
 		div {
 			font-size: 1.6rem;
@@ -284,7 +285,6 @@ footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border: 1px solid red;
 	height: 100px;
 
 	h1 {
@@ -295,13 +295,12 @@ footer {
 }
 
 .projects {
-	display: flex;
-	flex-wrap: wrap;
+	display: block;
 	margin: 10px 0;
 	width: 100%;
 	line-height: 2rem;
 	font-family: helvetica, arial;
-	height: 240px;
+	height: 350px;
 	background: #f8f8f8;
 
 	h1 {
@@ -310,4 +309,25 @@ footer {
 		margin-bottom: 12px;
 		padding: 5% 0 1% 5%;
 	}
+}
+
+.pic-grid {
+	.flex-setting;
+	height: 120px;
+	margin: 10px 30px;
+
+	.picture1 {
+		margin: 10px 10px;
+		width: 250px;
+		height: 230px;
+		line-height: 2rem;
+		font-family: helvetica, arial;
+		background: #f8f8f8;
+
+		img {
+			height: 230px;
+			width: 250px;
+			box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.1), -2px 0px 4px rgba(0, 0, 0, 0.1);
+		}
+}
 }

@@ -216,7 +216,7 @@ header {
   margin-bottom: 18px;
 }
 .summary p {
-  font-size: 2rem;
+  font-size: 1.4rem;
   color: #4f4f4f;
 }
 .skills {
@@ -269,12 +269,13 @@ header {
   margin: 10px 30px;
 }
 .experiences .box1 {
-  margin: 10px 30px;
+  margin: 10px 15px;
   width: 33%;
   line-height: 2rem;
   font-family: helvetica, arial;
   background: #f8f8f8;
   display: block;
+  text-align: left;
 }
 .experiences .box1 div {
   font-size: 1.6rem;
@@ -313,7 +314,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid red;
   height: 100px;
 }
 footer h1 {
@@ -322,13 +322,12 @@ footer h1 {
   color: #adadad;
 }
 .projects {
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
   margin: 10px 0;
   width: 100%;
   line-height: 2rem;
   font-family: helvetica, arial;
-  height: 240px;
+  height: 350px;
   background: #f8f8f8;
 }
 .projects h1 {
@@ -336,4 +335,23 @@ footer h1 {
   color: #adadad;
   margin-bottom: 12px;
   padding: 5% 0 1% 5%;
+}
+.pic-grid {
+  display: flex;
+  justify-content: space-between;
+  height: 120px;
+  margin: 10px 30px;
+}
+.pic-grid .picture1 {
+  margin: 10px 10px;
+  width: 250px;
+  height: 230px;
+  line-height: 2rem;
+  font-family: helvetica, arial;
+  background: #f8f8f8;
+}
+.pic-grid .picture1 img {
+  height: 230px;
+  width: 250px;
+  box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.1), -2px 0px 4px rgba(0, 0, 0, 0.1);
 }
