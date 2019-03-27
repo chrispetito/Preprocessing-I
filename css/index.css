@@ -195,3 +195,51 @@ header {
 .contact a:hover {
   color: lightblue;
 }
+.middle-content {
+  background: #f0f0f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 250px;
+}
+.summary {
+  padding: 5%;
+  line-height: 2rem;
+  font-family: helvetica, arial;
+  width: 49.5%;
+  height: 250px;
+  border: 1px solid red;
+  background: #f8f8f8;
+}
+.summary h1 {
+  font-size: 2.6rem;
+  color: #adadad;
+  margin-bottom: 10%;
+}
+.summary p {
+  font-size: 1.5rem;
+}
+.skills {
+  padding: 5%;
+  width: 49.5%;
+  line-height: 2rem;
+  font-family: helvetica, arial;
+  border: 1px solid  red;
+  height: 350px;
+  background: #f8f8f8;
+}
+.skills h1 {
+  font-size: 2.6rem;
+  color: #adadad;
+  margin-bottom: 10%;
+}
+.skills p {
+  display: inline-block;
+  text-align: center;
+  height: 30px;
+  border: 1px solid red;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  padding: 1.2% 5%;
+  margin: 0 10px 3% 0;
+}
