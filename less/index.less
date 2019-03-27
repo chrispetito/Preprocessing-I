@@ -56,12 +56,22 @@ table {
 
 // Start of code
 
+.flex-setting() {
+	display: flex;
+	justify-content: space-between;
+}
+
+.tile-hw() {
+	height: 350px;
+	width: 49.5%;
+}
 
 // variables
 
 @dark-gray: #4f4f4f;
 @medium-gray: #adadad;
 @light-gray: #c4c4c4;
+@main-blue: #418AEE;
 
 
 html, body {
@@ -95,7 +105,7 @@ nav {
 header {
 	width: 100%;
 	height: 24%;
-	margin: 3% 0;
+	margin: 3% 0 1% 0;
 	background: #f0f0f0;
 }
 
@@ -114,7 +124,7 @@ header {
 
 		&:hover {
 			text-decoration: underline;
-			color: lightblue;
+			color: @main-blue;
 			cursor: pointer;
 		}
 	  	}
@@ -122,6 +132,7 @@ header {
 
 	h2 {
 		font-size: 1.5rem;
+		color: @dark-gray;
 	}
 } //end of .name-bio
 
@@ -137,63 +148,107 @@ header {
 		margin-right: 5%;
 
 		&:hover {
-			color: lightblue;
+			color: @main-blue;
 		}
 	}
 } //end of .contact
 
 .middle-content {
-	background: #f0f0f0;
-	display: flex;
-	justify-content: space-between;
+	.flex-setting;
 	align-items: flex-start;
-	height: 250px;
+	flex-wrap: wrap;
 }
 
 .summary {
-	padding: 5%;
-	line-height: 2rem;
+	.tile-hw;
+	padding: 50px 5% 0 5%;
+	line-height: 2.8rem;
 	font-family: helvetica, arial;
-	width: 49.5%;
-	height: 250px;
-	border: 1px solid red;
 	background: #f8f8f8;
 	
 	h1 {
 		font-size: 2.6rem;
 		color: @medium-gray;
-		margin-bottom: 10%;
+		margin-bottom: 18px;
 	}
 
 	p {
-		font-size: 1.5rem;
+		font-size: 2rem;
+		color: @dark-gray;
 	}
 } //end of .overview
 
 .skills {
-	padding: 5%;
-	width: 49.5%;
+	.tile-hw;
+	padding: 50px 5%;
 	line-height: 2rem;
 	font-family: helvetica, arial;
-	border: 1px solid  red; 
-	height: 350px;
 	background: #f8f8f8;
 
 	h1 {
 		font-size: 2.6rem;
 		color: @medium-gray;
-		margin-bottom: 10%;
+		margin-bottom: 18px;
 	}
 
 	p {
 		display: inline-block;
 		text-align: center;
 		height: 30px;
-		border: 1px solid red;
+		border: 1px solid @main-blue;
 		border-radius: 20px;
 		font-size: 1.5rem;
-		padding: 1.2% 5%;
+		padding: 5px 5%;
 		margin: 0 10px 3% 0;
-		
+		color: @main-blue;
+
+		&:hover {
+			background: @main-blue;
+			color: white;
+		}
 	}
 } //end of .skills
+
+.bottom-content {
+	display: block;
+	flex-wrap: wrap;
+	margin: 10px 0;
+	width: 100%;
+	line-height: 2rem;
+	font-family: helvetica, arial;
+	height: 240px;
+	background: #f8f8f8;
+
+	h1 {
+		font-size: 2.6rem;
+		color: @medium-gray;
+		margin-bottom: 12px;
+		padding: 5% 0 1% 5%;
+	}
+}
+
+.experiences {
+	.flex-setting;
+	height: 120px;
+	margin: 10px 30px;
+
+	.experience1 {
+		margin: 10px 40px;
+		width: 33%;
+		line-height: 2rem;
+		font-family: helvetica, arial;
+		background: #f8f8f8;
+		display: block;
+	
+		div {
+			font-size: 1.6rem;
+			color: @medium-gray;
+
+			strong {
+				color: black;
+				font-weight: bold;
+			}
+		}
+	}
+}
+
