@@ -205,7 +205,7 @@ header {
 .summary {
   height: 350px;
   width: 49.5%;
-  padding: 50px 5% 0 5%;
+  padding: 46px 5% 0 5%;
   line-height: 2.8rem;
   font-family: helvetica, arial;
   background: #f8f8f8;
@@ -240,7 +240,7 @@ header {
   border-radius: 20px;
   font-size: 1.5rem;
   padding: 5px 5%;
-  margin: 0 10px 3% 0;
+  margin: 0 10px 10px 0;
   color: #418AEE;
 }
 .skills p:hover {
@@ -249,7 +249,6 @@ header {
 }
 .bottom-content {
   display: block;
-  flex-wrap: wrap;
   margin: 10px 0;
   width: 100%;
   line-height: 2rem;
@@ -269,19 +268,72 @@ header {
   height: 120px;
   margin: 10px 30px;
 }
-.experiences .experience1 {
-  margin: 10px 40px;
+.experiences .box1 {
+  margin: 10px 30px;
   width: 33%;
   line-height: 2rem;
   font-family: helvetica, arial;
   background: #f8f8f8;
   display: block;
 }
-.experiences .experience1 div {
+.experiences .box1 div {
   font-size: 1.6rem;
   color: #adadad;
 }
-.experiences .experience1 div strong {
+.experiences .box1 div strong {
   color: black;
   font-weight: bold;
+}
+.box2 {
+  margin: 10px 10px 10px 100px;
+  width: 33%;
+  line-height: 2rem;
+  font-family: helvetica, arial;
+  background: #f8f8f8;
+  display: block;
+}
+.box2 div {
+  font-size: 1.6rem;
+  color: #adadad;
+}
+.box3 {
+  margin: 10px 40px;
+  width: 33%;
+  line-height: 2rem;
+  font-family: helvetica, arial;
+  background: #f8f8f8;
+  display: block;
+  text-align: right;
+}
+.box3 div {
+  font-size: 1.6rem;
+  color: #adadad;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+  height: 100px;
+}
+footer h1 {
+  font-size: 1.6rem;
+  font-family: helvetica, arial;
+  color: #adadad;
+}
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0;
+  width: 100%;
+  line-height: 2rem;
+  font-family: helvetica, arial;
+  height: 240px;
+  background: #f8f8f8;
+}
+.projects h1 {
+  font-size: 2.6rem;
+  color: #adadad;
+  margin-bottom: 12px;
+  padding: 5% 0 1% 5%;
 }
