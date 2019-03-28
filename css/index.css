@@ -291,7 +291,31 @@ header {
   color: #418AEE;
 }
 .skills p:hover {
+  color: white;
   background: #418AEE;
+}
+.skills .color1 {
+  color: #E65A7A;
+  border: 1px solid #E65A7A;
+}
+.skills .color1:hover {
+  background: #E65A7A;
+  color: white;
+}
+.skills .color2 {
+  color: #2BC194;
+  border: 1px solid #2BC194;
+}
+.skills .color2:hover {
+  background: #2BC194;
+  color: white;
+}
+.skills .color3 {
+  color: #414656;
+  border: 1px solid #414656;
+}
+.skills .color3:hover {
+  background: #414656;
   color: white;
 }
 .bottom-content {
