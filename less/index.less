@@ -266,10 +266,12 @@ header {
 .experiences {
 	.flex-setting;
 	height: 120px;
-	margin: 10px 30px;
+	margin: 10px 5px;
+	padding-top: 40px;
 
-	.tag {
-		font-family: 'Times New Roman', Times, serif;
+	h1 {
+		padding: 20px;
+		padding-top: 10px;
 	}
 }
 	
@@ -306,6 +308,10 @@ header {
 	div {
 		font-size: 1.6rem;
 		color: @medium-gray;
+		
+		@media (max-width:500px) {
+			display: none;
+		}
 	}
 }
 
@@ -321,7 +327,11 @@ header {
 	div {
 		font-size: 1.6rem;
 		color: @medium-gray;
+		
+		@media (max-width:500px) {
+			display: none;
 	}
+}
 }
 
 .projects {

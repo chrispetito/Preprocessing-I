@@ -311,10 +311,12 @@ header {
   display: flex;
   justify-content: space-between;
   height: 120px;
-  margin: 10px 30px;
+  margin: 10px 5px;
+  padding-top: 40px;
 }
-.experiences .tag {
-  font-family: 'Times New Roman', Times, serif;
+.experiences h1 {
+  padding: 20px;
+  padding-top: 10px;
 }
 .box1 {
   margin: 10px 15px;
@@ -345,6 +347,11 @@ header {
   font-size: 1.6rem;
   color: #adadad;
 }
+@media (max-width: 500px) {
+  .box2 div {
+    display: none;
+  }
+}
 .box3 {
   margin: 10px 40px;
   width: 33%;
@@ -357,6 +364,11 @@ header {
 .box3 div {
   font-size: 1.6rem;
   color: #adadad;
+}
+@media (max-width: 500px) {
+  .box3 div {
+    display: none;
+  }
 }
 .projects {
   display: block;
