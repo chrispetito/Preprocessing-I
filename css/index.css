@@ -159,6 +159,7 @@ header {
   height: 24%;
   margin: 3% 0 1% 0;
   background: #f0f0f0;
+  box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.1), -2px 0px 4px rgba(0, 0, 0, 0.1);
 }
 .name-bio {
   padding: 5% 5% 2% 5%;
@@ -209,6 +210,7 @@ header {
   line-height: 2.8rem;
   font-family: helvetica, arial;
   background: #f8f8f8;
+  box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.1), -2px 0px 4px rgba(0, 0, 0, 0.1);
 }
 .summary h1 {
   font-size: 2.6rem;
@@ -226,6 +228,7 @@ header {
   line-height: 2rem;
   font-family: helvetica, arial;
   background: #f8f8f8;
+  box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.1), -2px 0px 4px rgba(0, 0, 0, 0.1);
 }
 .skills h1 {
   font-size: 2.6rem;
@@ -255,6 +258,7 @@ header {
   font-family: helvetica, arial;
   height: 240px;
   background: #f8f8f8;
+  box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.1), -2px 0px 4px rgba(0, 0, 0, 0.1);
 }
 .bottom-content h1 {
   font-size: 2.6rem;
@@ -329,6 +333,7 @@ footer h1 {
   font-family: helvetica, arial;
   height: 350px;
   background: #f8f8f8;
+  box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.1), -2px 0px 4px rgba(0, 0, 0, 0.1);
 }
 .projects h1 {
   font-size: 2.6rem;
@@ -354,4 +359,7 @@ footer h1 {
   height: 230px;
   width: 250px;
   box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.1), -2px 0px 4px rgba(0, 0, 0, 0.1);
+}
+.pic-grid .picture1 img:hover {
+  box-shadow: none;
 }
