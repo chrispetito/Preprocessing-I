@@ -299,7 +299,7 @@ header {
   width: 100%;
   line-height: 2rem;
   font-family: helvetica, arial;
-  height: 240px;
+  height: 200px;
   background: #f8f8f8;
   box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.1), -2px 0px 4px rgba(0, 0, 0, 0.1);
 }
