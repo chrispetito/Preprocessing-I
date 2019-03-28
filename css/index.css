@@ -154,7 +154,7 @@ nav a {
 nav a:hover {
   color: #c4c4c4;
 }
-@media (max-width: 500px) {
+@media (max-width:500px) {
   nav {
     display: inline-block;
     margin-top: 30px;
@@ -168,7 +168,7 @@ header {
   background: #f8f8f8;
   box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.1), -2px 0px 4px rgba(0, 0, 0, 0.1);
 }
-@media (max-width: 500px) {
+@media (max-width:500px) {
   header {
     width: 500px;
     height: 340px;
@@ -184,7 +184,7 @@ header {
   font-size: 3.5rem;
   color: #adadad;
 }
-@media (max-width: 500px) {
+@media (max-width:500px) {
   .name-bio h1 {
     width: 500px;
     line-height: 3.5rem;
@@ -204,14 +204,14 @@ header {
   font-size: 1.5rem;
   color: #4f4f4f;
 }
-@media (max-width: 500px) {
+@media (max-width:500px) {
   .name-bio h2 {
     height: 140px;
     width: 500px;
     padding-right: 50px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width:500px) {
   .name-bio {
     justify-content: center;
   }
@@ -236,7 +236,7 @@ header {
   align-items: flex-start;
   flex-wrap: wrap;
 }
-@media (max-width: 500px) {
+@media (max-width:500px) {
   .middle-content {
     display: block;
     width: 1000px;
@@ -260,7 +260,7 @@ header {
   font-size: 1.4rem;
   color: #4f4f4f;
 }
-@media (max-width: 500px) {
+@media (max-width:500px) {
   .summary {
     margin-bottom: 10px;
   }
@@ -304,7 +304,7 @@ header {
   background: #f8f8f8;
   box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.1), -2px 0px 4px rgba(0, 0, 0, 0.1);
 }
-@media (max-width: 500px) {
+@media (max-width:500px) {
   .bottom-content {
     width: 500px;
     height: 300px;
@@ -342,10 +342,10 @@ header {
   color: #adadad;
 }
 .box1 div strong {
-  color: black;
+  color: #4f4f4f;
   font-weight: bold;
 }
-@media (max-width: 500px) {
+@media (max-width:500px) {
   .box1 {
     width: 220px;
     margin-right: 60px;
@@ -363,7 +363,7 @@ header {
   font-size: 1.6rem;
   color: #adadad;
 }
-@media (max-width: 500px) {
+@media (max-width:500px) {
   .box2 {
     display: none;
   }
@@ -379,9 +379,9 @@ header {
 }
 .box3 div {
   font-size: 1.6rem;
-  color: #adadad;
+  color: #c4c4c4;
 }
-@media (max-width: 500px) {
+@media (max-width:500px) {
   .box3 {
     display: none;
   }
@@ -402,13 +402,13 @@ header {
   margin-bottom: 12px;
   padding: 5% 0 1% 5%;
 }
-@media (max-width: 500px) {
+@media (max-width:500px) {
   .projects h1 {
     padding: 30px 20px 20px 20px;
     margin-left: 20px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width:500px) {
   .projects {
     width: 500px;
     height: 840px;
@@ -420,7 +420,7 @@ header {
   height: 120px;
   margin: 10px 30px;
 }
-@media (max-width: 500px) {
+@media (max-width:500px) {
   .pic-grid {
     flex-direction: column;
     margin-left: 120px;
@@ -454,7 +454,7 @@ footer h1 {
   font-family: helvetica, arial;
   color: #adadad;
 }
-@media (max-width: 500px) {
+@media (max-width:500px) {
   footer {
     display: inline-block;
     margin-top: 10px;
