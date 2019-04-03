@@ -53,7 +53,408 @@ table {
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
+
+// Start of code
+
+.flex-setting() {
+	display: flex;
+	justify-content: space-between;
 }
 
+.tile-hw() {
+	height: 350px;
+	width: 49.5%;
+}
+
+// variables
+
+@dark-gray: #4f4f4f;
+@medium-gray: #adadad;
+@light-gray: #c4c4c4;
+@main-blue: #418AEE;
+
+@mobile: ~"(max-width:500px)";
+
+
+html, body {
+	height: 100%;
+	font-size: 62.5%;
+  }
+
+ body {
+	width: 880px;
+	margin: 0 auto;
+  }
+
+nav {
+	display: flex;
+	justify-content: flex-end;
+
+	a {
+		margin-left: 42px;
+		margin-top: 30px;
+		font-size: 1.8rem;
+		font-family: helvetica, arial;
+		text-decoration: none;
+		color: @dark-gray;
+
+		&:hover {
+		color: @light-gray;
+		}
+	}
+	@media @mobile {
+		display: inline-block;
+		margin-top: 30px;
+		margin-left: 28px;
+	}
+} //end of nav
+
+header {
+	width: 100%;
+	height: 24%;
+	margin: 30px 0 10px 0;
+	background: #f8f8f8;
+	box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.1), -2px 0px 4px rgba(0, 0, 0, 0.1);
+
+	@media @mobile {
+		width: 500px;
+		height: 340px;
+		padding: 20px;
+	}
+}
+
+.name-bio {
+	padding: 5% 5% 2% 5%;
+	line-height: 2.5rem;
+	font-family: helvetica, arial;
+
+	h1 {
+		font-size: 3.5rem;
+		color: @medium-gray;
+
+		@media @mobile {
+			width: 500px;
+			line-height: 3.5rem;
+			padding-right: 50px;
+		}
+
+		a {
+			text-decoration: none;
+			color: @medium-gray;
+
+		&:hover {
+			text-decoration: underline;
+			color: @main-blue;
+			cursor: pointer;
+		}
+	  	}
+	}
+
+	h2 {
+		font-size: 1.5rem;
+		color: @dark-gray;
+		
+		@media @mobile {
+			height: 140px;
+			width: 500px;
+			padding-right: 50px;
+		}
+	}
+
+	@media @mobile {
+		justify-content: center;
+	}
+} //end of .name-bio
+
+.contact {
+	padding: 0 5%;
+	line-height: 2.5rem;
+	font-family: helvetica, arial;
+
+	a {
+		font-size: 1.8rem;
+		text-decoration: none;
+		color: @light-gray;
+		margin-right: 5%;
+
+		&:hover {
+			color: @main-blue;
+		}
+	}
+} //end of .contact
+
+.middle-content {
+	.flex-setting;
+	align-items: flex-start;
+	flex-wrap: wrap;
+
+	@media @mobile {
+		display: block;
+		width: 1000px;
+	}
+	
+}
+
+.summary {
+	.tile-hw;
+	padding: 46px 5% 0 5%;
+	line-height: 2.8rem;
+	font-family: helvetica, arial;
+	background: #f8f8f8;
+	box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.1), -2px 0px 4px rgba(0, 0, 0, 0.1);
+	
+	h1 {
+		font-size: 2.6rem;
+		color: @medium-gray;
+		margin-bottom: 18px;
+	}
+
+	p {
+		font-size: 1.4rem;
+		color: @dark-gray;
+	}
+
+	@media @mobile {
+		margin-bottom: 10px;
+	}
+} //end of .overview
+
+.skills {
+	.tile-hw;
+	padding: 50px 5%;
+	line-height: 2rem;
+	font-family: helvetica, arial;
+	background: #f8f8f8;
+	box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.1), -2px 0px 4px rgba(0, 0, 0, 0.1);
+
+	h1 {
+		font-size: 2.6rem;
+		color: @medium-gray;
+		margin-bottom: 24px;
+	}
+
+	p {
+		display: inline-block;
+		text-align: center;
+		height: 30px;
+		border: 1px solid @main-blue;
+		border-radius: 3px;
+		font-size: 1.4rem;
+		padding: 5px 5%;
+		margin: 0 10px 10px 0;
+		color: @main-blue;
+
+		&:hover {
+			color: white;
+			background: @main-blue;
+		}
+	}
+
+	.color1 {
+		color: #E65A7A;
+		border: 1px solid #E65A7A;
+
+		&:hover {
+			background: #E65A7A;
+			color: white;
+		}
+	}
+
+	.color2 {
+		color: #2BC194;
+		border: 1px solid #2BC194;
+
+		&:hover {
+			background: #2BC194;
+			color: white;
+		}
+	}
+	
+	.color3 {
+		color: #414656;
+		border: 1px solid #414656;
+
+		&:hover {
+			background: #414656;
+			color: white;
+		}
+	}
+} //end of .skills
+
+.bottom-content {
+	display: block;
+	margin: 10px 0;
+	width: 100%;
+	line-height: 2rem;
+	font-family: helvetica, arial;
+	height: 200px;
+	background: #f8f8f8;
+	box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.1), -2px 0px 4px rgba(0, 0, 0, 0.1);
+
+	@media @mobile {
+		width: 500px;
+		height: 300px;
+	}
+
+	h1 {
+		font-size: 2.6rem;
+		color: @medium-gray;
+		padding: 30px 20px 20px 20px;
+		margin-left: 20px;
+	}
+}
+.experiences {
+	.flex-setting;
+	height: 120px;
+	margin: 10px 5px;
+	padding-top: 40px;
+
+	h1 {
+		padding: 20px;
+		padding-top: 10px;
+	}
+}
+	
+
+	.box1 {
+		margin: 10px 0;
+		width: 200px;
+		line-height: 2rem;
+		font-family: helvetica, arial;
+		background: #f8f8f8;
+		display: block;
+		text-align: left;
+		height: 100px;
+
+	
+		div {
+			font-size: 1.6rem;
+			color: @medium-gray;
+
+			strong {
+				color: @dark-gray;
+				font-weight: bold;
+			}
+		}
+		
+		@media @mobile {
+			width:220px;
+			margin-right: 60px;
+		}
+	}
+
+
+.box2 {
+	margin: 10px 10px 10px 70px;
+	width: 200px;
+	line-height: 2rem;
+	font-family: helvetica, arial;
+	background: #f8f8f8;
+	display: block;
+
+	div {
+		font-size: 1.6rem;
+		color: @medium-gray;
+	}
+
+	@media @mobile {
+		display: none;
+	}
+}
+
+.box3 {
+	margin: 10px 36px 10px 20px;
+	width: 120px;
+	line-height: 2rem;
+	font-family: helvetica, arial;
+	background: #f8f8f8;
+	display: block;
+	text-align: right;
+
+	div {
+		font-size: 1.6rem;
+		color: @light-gray;
+	}
+
+	@media @mobile {
+		display: none;
+	}
+}
+
+.projects {
+	display: block;
+	margin: 10px 0;
+	width: 100%;
+	line-height: 2rem;
+	font-family: helvetica, arial;
+	height: 350px;
+	background: #f8f8f8;
+	box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.1), -2px 0px 4px rgba(0, 0, 0, 0.1);
+
+	h1 {
+		font-size: 2.6rem;
+		color: @medium-gray;
+		margin-bottom: 12px;
+		padding: 5% 0 1% 5%;
+
+		@media @mobile {
+			padding: 30px 20px 20px 20px;
+			margin-left: 20px;
+		}
+	}
+
+	@media @mobile {
+		width: 500px;
+		height: 840px;
+	}
+}
+
+.pic-grid {
+	.flex-setting;
+	height: 120px;
+	margin: 10px 30px;
+
+	@media @mobile {
+		flex-direction: column;
+		margin-left: 120px;
+	}
+
+	.picture1 {
+		margin: 10px 10px;
+		width: 250px;
+		height: 230px;
+		line-height: 2rem;
+		font-family: helvetica, arial;
+		background: #f8f8f8;
+
+		img {
+			height: 230px;
+			width: 250px;
+			box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.1), -2px 0px 4px rgba(0, 0, 0, 0.1);
+
+			&:hover {
+				box-shadow: none;
+				opacity: 0.5;
+			}
+		}
+}
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
+
+	h1 {
+		font-size: 1.6rem;
+		font-family: helvetica, arial;
+		color: @medium-gray;
+	}
+
+	@media @mobile {
+		display: inline-block;
+		margin-top: 10px;
+		margin-left: 180px;
+	}
+}
